@@ -1,0 +1,52 @@
+body {	
+    font-family: "Montserrat", sans-serif;
+}
+
+nav {   
+    /* box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 8px 0 rgba(0,0,0,0.19); */
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.2);  
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
+.navbar-brand {
+	color: rgb(9, 230, 230);
+	font-family: "McLaren", cursive;	
+}
+
+.navbar-brand:hover {
+	color: #63635c;	
+}
+
+.card {
+    color: #63635c;
+}
+
+.fill {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;            
+}
+
+.fill img {
+    /* background: linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,228,225,0.8)); */
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;        
+}    
+
+.left {
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-footer a {	
+	text-decoration: none;
+	color: rgb(4, 201, 201);
+}
+

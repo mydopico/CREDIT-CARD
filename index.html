@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+    <!-- Custom CSS   -->
+    <link rel="stylesheet" href="css\styles.css">			
+    <!-- Bootstrap   -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<!-- Fontawesome -->		
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">	 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />	
+	<!-- googlefonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>       
+	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Krona+One&family=Montserrat:wght@400;700&family=Wallpoet&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand px-3" href="#"> CHALLENGES DAILY UI :: 002</a>
+  </nav>
+
+        <div class="container d-flex justify-content-center align-items-center mt-4 mb-4">   
+           
+          <!-- HORIZONTAL CARD -->
+                <div class="card shadow" style="max-width: 45rem;">
+                    <div class="row g-0">
+                    
+                      <!-- PHOTO  SIDE  -->
+                     <div class="fill col-md-6 col-lg-5 d-none d-md-block">
+                           <img class="img" 
+                           src="https://images.unsplash.com/photo-1461638189575-2a947ecbf2cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUxfHxza3lzY3JhcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" 
+                           alt="city"/>                          
+                     </div>	
+                    
+                     <!-- FORM SIDE  -->
+                     <div class="left col-md-6 col-lg-7 d-flex align-items-center p-2">   
+                        <div class="card-body">
+                          <h1 class="text-center"><i class="fa-solid fa-cart-shopping"></i></h1>  						
+                          <h2 id="title" class="card-title text-center mb-5">Shopping checkout                           
+                          </h2>					  
+                          
+                          <form action="/login" method="POST" class="validated-form" novalidate>
+                            <div class="row g-2">
+                                <div class="col-sm-6">                                   
+                                        <label for="firstName" class="form-label">First name</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="" value="" autofocus required>
+                                        <div class="invalid-feedback">
+                                            Valid first name is required.
+                                        </div>                                    
+                                </div>                    
+                                <div class="col-sm-6">                                      
+                                        <label for="lastName" class="form-label">Last name</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                        <div class="invalid-feedback">
+                                            Valid last name is required.
+                                        </div>                                   
+                                </div>     
+                                <div class="col-sm-12">                                    
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="user@mail.com" value="" required>
+                                        <div class="invalid-feedback">
+                                        Valid email is required.
+                                        </div>                                    
+                                </div> 
+                                
+                                <hr>
+                                <h5>Billing adress</h5>
+                                <div class="col-12">                                    
+                                        <label for="address" class="form-label">Address</label>
+                                        <input type="text" class="form-control" id="address" placeholder="22 Main St, City" required>
+                                        <div class="invalid-feedback">
+                                        Please enter your shipping address.
+                                        </div>                                    
+                                 </div>                                 
+                                
+                                <div class="col-md-6">                                        
+                                            <label for="zip" class="form-label">Zip code</label>
+                                            <input type="text" class="form-control" id="zip" placeholder="" required>
+                                            <div class="invalid-feedback">
+                                                Zip code required
+                                            </div>                                       
+                                </div>                    
+                                <div class="col-md-6">                                       
+                                            <label for="country" class="form-label">Country</label>
+                                            <input type="text" class="form-control" id="country" placeholder="" required>
+                                            <div class="invalid-feedback">
+                                                Country required
+                                            </div>                                       
+                                </div>  
+                            
+                                <hr>
+                                <h5 class="">Payment</h5>
+                                <div class="col-md-12">
+                                    <label class="form-label" for="name" >Credit card Name</label>
+                                    <input class="form-control form-control-md" type="text" id="name" name="name" required>
+                                    <small class="text-muted">Full name as displayed on card</small>
+                                    <div class="invalid-feedback">
+                                      Name on card is required
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label" for="number">Credit card Number   <i class="fa-brands fa-cc-mastercard ms-2"></i> <i class="fa-brands fa-cc-visa ms-2"></i>  <i class="fa-brands fa-cc-amex ms-2"></i></label>
+                                    <input class="form-control " type="text" id="number" name="number" required>
+                                    <div class="invalid-feedback">
+                                      Credit card number is required
+                                    </div>
+                                </div>                            
+                                <div class="col-md-6">
+                                  <label for="expiration" class="form-label">Expiration date</label>
+                                  <input type="text" class="form-control" id="expiration" placeholder="MM/AA" required>
+                                  <div class="invalid-feedback">
+                                    Expiration date required
+                                  </div>
+                                </div>                    
+                                <div class="col-md-6">
+                                  <label for="cvv" class="form-label">Security code</label>
+                                  <input type="text" class="form-control" id="cvv" placeholder="CVV" required>
+                                  <div class="invalid-feedback">
+                                    Security code required
+                                  </div>
+                                </div>
+
+                            </div>   <!-- end row -->
+                    
+                            <hr class="my-4">
+                             <button class="btn btn-lg btn-primary w-100 mb-3" type="submit">Checkout</button>
+                            	
+                         </form>
+                            
+                     </div> 	 <!-- end card-body -->
+                   </div>	 <!-- end col --->
+                   <div class="card-footer text-center">
+                    <small>Photo by 
+                      <a href="https://unsplash.com/@danist07?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Danist Soh</a> 
+                      on <a href="https://unsplash.com/es/s/fotos/skyscraper?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </small>
+                   </div> <!-- end card-footer -->
+                </div>  <!-- end card shadow -->
+            </div>
+       
+    </div>
+        
+  
+     
+    
+</body>
+
+<!-- VALIDATION - JavaScript for disabling form submissions if there are invalid fields-->
+<script>
+ (function () {
+            'use strict'
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.validated-form')
+            // Loop over them and prevent submission
+            Array.from(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+</script>
+</html>
+
+
